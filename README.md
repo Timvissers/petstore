@@ -40,4 +40,3 @@ Functionality is based on the Java Pet Store (Sun Microsystems)
 
     grunt serve
         
-    
