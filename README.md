@@ -2,7 +2,7 @@
 
 This is a sample application for me to work with some javascript frameworks.
 
-A deployed version of this source can be found here: https://peaceful-anchorage-8639.herokuapp.com/
+A deployed version of this source can be found here: https://javascriptpetstore.herokuapp.com/
 
 Functionality is based on the Java Pet Store (Sun Microsystems)
 
