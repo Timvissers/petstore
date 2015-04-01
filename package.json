@@ -81,7 +81,7 @@
   },
   "scripts": {
     "postinstall": "npm run build",
-    "build": "grunt",
+    "build": "./node_modules/grunt-cli/bin/grunt",
     "start": "node dist/server/app.js",
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
