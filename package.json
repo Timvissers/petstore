@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "main": "server/app.js",
   "dependencies": {
-    "grunt": "~0.4.4", //this is for heroku production mode, which strips devDependencies
     "express": "~4.0.0",
     "morgan": "~1.0.0",
     "body-parser": "~1.5.0",
@@ -20,7 +19,10 @@
     "connect-mongo": "^0.4.1",
     "socket.io": "^1.0.6",
     "socket.io-client": "^1.0.6",
-    "socketio-jwt": "^2.0.2"
+    "socketio-jwt": "^2.0.2",
+
+
+    "grunt": "~0.4.4"
   },
   "devDependencies": {
     "grunt-autoprefixer": "~0.7.2",
