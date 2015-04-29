@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('portfolioApp')
+angular.module('petstoreApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',

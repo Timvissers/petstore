@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('portfolioApp', [
+angular.module('petstoreApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',

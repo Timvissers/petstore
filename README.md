@@ -34,9 +34,16 @@ Functionality is based on the Java Pet Store (Sun Microsystems)
 
 - https://github.com/DaftMonk/generator-angular-fullstack/
 
-# Build and run this project
+# Just some developer information
+
+## Build and run this project
 
     ./mongod
 
     grunt serve
         
+## Mongo
+
+    use db petstore
+    
+    db.pets.find()
