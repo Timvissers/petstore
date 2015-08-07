@@ -2,7 +2,7 @@
     <div class="container">
         <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav">
-                <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+                <li ng-repeat="item in menu" ui-sref-active="active">
                     <a ui-sref="{{item.state}}">{{item.title}}</a>
                 </li>
             </ul>

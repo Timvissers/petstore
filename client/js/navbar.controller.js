@@ -9,7 +9,4 @@ angular.module('petstoreApp')
 
         $scope.isCollapsed = true;
 
-        $scope.isActive = function (route) {
-            return route === $location.path();
-        };
     });
