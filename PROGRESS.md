@@ -5,6 +5,7 @@ update node
 install ruby for sass	
 
     sudo gem install sass
+    
 install mongodb	
 
     install and start mongodb after creating /data/db (mongodb)

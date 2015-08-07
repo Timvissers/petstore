@@ -14,7 +14,7 @@ Functionality is based on the Java Pet Store (Sun Microsystems)
 - LoDash
 - Socket.IO
 
-- AngularJS (ui-router)
+- AngularJS 1.4
 - JSon
 - JQuery
 - Bootstrap
