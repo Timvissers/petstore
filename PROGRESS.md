@@ -17,7 +17,9 @@ https://github.com/DaftMonk/generator-angular-fullstack
 	
 build cycle	
 
-    grunt for building, grunt serve for preview, and grunt serve:dist for a preview of the built app.
+    grunt for building
+    grunt serve for preview
+    grunt serve:dist for a preview of the built app.
 
 heroku setup in dist folder!	
     
@@ -29,7 +31,7 @@ heroku setup in dist folder!
 	follow instructions of heroku git for commit and deploy!
 	git push heroku master (this is to deploy)
 	
-it works now: https://javascriptpetstore.herokuapp.com/	
+    it works now: https://javascriptpetstore.herokuapp.com/	
     
     This way we have to build dist locally and commit the dist to heroku git in order to deploy!
     
