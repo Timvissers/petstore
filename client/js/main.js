@@ -5,7 +5,7 @@ angular.module('petstoreApp')
         $stateProvider
             .state('main', {
                 url: '/',
-                templateUrl: 'app/main/main.html',
+                templateUrl: '../partials/main.html',
                 controller: 'MainCtrl'
             });
     });
