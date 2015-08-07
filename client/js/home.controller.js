@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('petstoreApp')
-    .controller('MainCtrl', function ($scope, $http, socket) {
+    .controller('HomeController', function ($scope, $http, socket) {
         $scope.awesomePets = [];
 
         $http.get('/api/pets').success(function (awesomePets) {
