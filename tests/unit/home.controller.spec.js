@@ -6,7 +6,7 @@ describe('Controller: HomeController', function () {
     beforeEach(module('petstoreApp'));
     beforeEach(module('socketMock'));
 
-    var MainCtrl,
+    var HomeController,
         scope,
         $httpBackend;
 
@@ -17,7 +17,7 @@ describe('Controller: HomeController', function () {
             .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
 
         scope = $rootScope.$new();
-        MainCtrl = $controller('HomeController', {
+        HomeController = $controller('HomeController', {
             $scope: scope
         });
     }));
