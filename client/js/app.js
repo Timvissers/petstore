@@ -17,7 +17,8 @@ angular.module('petstoreApp', [
         });
         $stateProvider.state('AvailablePets', {
             url:'/AvailablePets',
-            templateUrl:'../partials/available-pets-overview.html'
+            templateUrl:'../partials/available-pets-overview.html',
+            controller: 'AvailablePetsOverviewController as apCtrl'
         });
 
         $locationProvider.html5Mode(true);

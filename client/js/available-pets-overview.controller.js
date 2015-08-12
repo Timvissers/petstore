@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('petstoreApp').controller('AvailablePetsController', function($http){
+angular.module('petstoreApp').controller('AvailablePetsOverviewController', function($http){
 
     var self = this;
 
