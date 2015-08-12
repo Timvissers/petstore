@@ -1,14 +1,14 @@
-available-pets > div {
+smac-grid > div {
     display:table;
     margin-left: auto;
     margin-right: auto;
 }
 
-available-pets > div:first-of-type {
+smac-grid > div:first-of-type {
     background-color: aquamarine;
 }
 
-available-pets > div > div{
+smac-grid > div > div{
     display:inline-block;
     border:1px solid #ddd;
     width:300px;
