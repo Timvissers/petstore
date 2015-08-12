@@ -6,19 +6,19 @@
 
 var pet = require('./pet.model');
 
-exports.register = function(socket) {
-  pet.schema.post('save', function (doc) {
-    onSave(socket, doc);
-  });
-  pet.schema.post('remove', function (doc) {
-    onRemove(socket, doc);
-  });
+exports.register = function (socket) {
+    pet.schema.post('save', function (doc) {
+        onSave(socket, doc);
+    });
+    pet.schema.post('remove', function (doc) {
+        onRemove(socket, doc);
+    });
 }
 
 function onSave(socket, doc, cb) {
-  socket.emit('pet:save', doc);
+    socket.emit('pet:save', doc);
 }
 
 function onRemove(socket, doc, cb) {
-  socket.emit('pet:remove', doc);
+    socket.emit('pet:remove', doc);
 }
