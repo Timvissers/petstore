@@ -5,7 +5,8 @@ angular.module('petstoreApp', [
     'ngResource',
     'ngSanitize',
     'btford.socket-io',
-    'ui.router'
+    'ui.router',
+    'smac'
 ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/');

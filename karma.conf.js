@@ -20,6 +20,7 @@ module.exports = function (config) {
             'client/bower_components/lodash/dist/lodash.compat.js',
             'client/bower_components/angular-socket-io/socket.js',
             'client/bower_components/angular-ui-router/release/angular-ui-router.js',
+            'client/bower_components/some-more-angular-components/dist/some-more-angular-components.js',
             'client/js/**/*.js',
             'tests/unit/**/*.js'
         ],
