@@ -1,24 +1,30 @@
 'use strict';
 
 angular.module('petstoreApp')
-    .controller('HomeController', function ($scope, $http, socket) {
-        $scope.awesomePets = [];
+    .controller('HomeController', function ($scope, socket, SMACJsonFetcher) {
 
-        $http.get('/api/pets').success(function (awesomePets) {
-            $scope.awesomePets = awesomePets;
-            socket.syncUpdates('pet', $scope.awesomePets);
+        var self = this;
+
+        self.availablePets = [];
+        self.newPet = {};
+
+        var petsFetcher = SMACJsonFetcher.all('/api/pets');
+        petsFetcher.getList(function(list){
+            self.availablePets = list;
+            socket.syncUpdates('pet', self.availablePets);
         });
 
-        $scope.addPet = function () {
-            if ($scope.newPet === '') {
+        self.addPet = function () {
+            if (self.newPet.name === '') {
                 return;
             }
-            $http.post('/api/pets', { name: $scope.newPet });
-            $scope.newPet = '';
+            petsFetcher.addOne(self.newPet);
+            self.newPet = {};
         };
 
-        $scope.deletePet = function (pet) {
-            $http.delete('/api/pets/' + pet._id);
+        self.deletePet = function (pet) {
+            var petFetcher = SMACJsonFetcher.one('/api/pets', pet._id);
+            petFetcher.deleteOne();
         };
 
         $scope.$on('$destroy', function () {

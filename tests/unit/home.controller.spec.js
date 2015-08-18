@@ -6,24 +6,26 @@ describe('Controller: HomeController', function () {
     beforeEach(module('petstoreApp'));
     beforeEach(module('socketMock'));
 
-    var HomeController,
-        scope,
-        $httpBackend;
+    var HomeController;
+    var scope;
+    var aPet = {name: 'deer'};
+    var mockedPetsFetcher = {
+        getList : function(callback){callback([aPet]);}
+    };
+    var mockedSMACJsonFetcher = {
+        all : function(){return mockedPetsFetcher;}
+    };
 
     // Initialize the controller and a mock scope
-    beforeEach(inject(function (_$httpBackend_, $controller, $rootScope) {
-        $httpBackend = _$httpBackend_;
-        $httpBackend.expectGET('/api/pets')
-            .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
-
+    beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
         HomeController = $controller('HomeController', {
-            $scope: scope
+            $scope: scope,
+            SMACJsonFetcher: mockedSMACJsonFetcher
         });
     }));
 
     it('should attach a list of pets to the scope', function () {
-        $httpBackend.flush();
-        expect(scope.awesomePets.length).toBe(4);
+        expect(HomeController.availablePets).toEqual([aPet]);
     });
 });

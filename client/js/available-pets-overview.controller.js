@@ -1,13 +1,12 @@
 'use strict';
 
-angular.module('petstoreApp').controller('AvailablePetsOverviewController', function($http){
+angular.module('petstoreApp').controller('AvailablePetsOverviewController', function(SMACJsonFetcher){
 
     var self = this;
 
-    self.availablePets = [];
-
-    $http.get('/api/pets').success(function (availablePets) {
-        self.availablePets = availablePets;
+    var petsFetcher = SMACJsonFetcher.all('/api/pets');
+    petsFetcher.getList(function(list){
+        self.availablePets = list;
     });
 
 });

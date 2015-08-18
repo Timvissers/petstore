@@ -37,6 +37,7 @@ exports.show = function (req, res) {
 
 // Creates a new pet in the DB.
 exports.create = function (req, res) {
+
     Pet.create(req.body, function (err, pet) {
         if (err) {
             return handleError(res, err);

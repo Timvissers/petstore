@@ -13,7 +13,7 @@ angular.module('petstoreApp', [
         $stateProvider.state('Home', {
             url:'/',
             templateUrl:'../partials/home.html',
-            controller: 'HomeController'
+            controller: 'HomeController as homeCtrl'
         });
         $stateProvider.state('AvailablePets', {
             url:'/AvailablePets',
