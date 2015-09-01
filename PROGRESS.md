@@ -35,3 +35,5 @@ heroku setup in dist folder!
     
     This way we have to build dist locally and commit the dist to heroku git in order to deploy!
     
+bower publishing
+    
