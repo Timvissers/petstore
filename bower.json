@@ -16,7 +16,7 @@
     "angular-socket-io": "~0.6.1",
     "angular-ui-router": "~0.2.14",
     "fetch": "~0.9.0",
-    "some-more-angular-components": "~0.0.1"
+    "some-more-angular-components": "~0.1.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.3",
