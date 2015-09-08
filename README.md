@@ -12,29 +12,37 @@ A deployed version of these sources can be found here: https://javascriptpetstor
 
 Functionality is based on the Java Pet Store (Sun Microsystems)
 
-# Technologies and platforms used
+Technologies used:
+* Node / NPM
+* Express
+* MongoDB
+* LoDash
+* Socket.IO
 
-- Node / NPM
-- Express
-- MongoDB
-- LoDash
-- Socket.IO
+* AngularJS 1.4
+* JSon
+* JQuery TODO remove
+* Bootstrap TODO remove
+* SASS TODO remove
+* Font*Awesome TODO remove
 
-- AngularJS 1.4
-- JSon
-- JQuery
-- Bootstrap
-- SASS
-- Font-Awesome
+* Angular UI Router TODO replace
+* Some more angular components (my own library of angular services, directives, filters)
 
-- Yeoman
-- Grunt
-- Karma
-- Jasmine
-- RequireJS
-- Bower
-- Protractor
-- Heroku
+* Yeoman
+* Grunt
+* Karma TODO remove
+* Jasmine TODO remove
+* RequireJS TODO remove
+* Bower
+* Protractor TODO remove
+* Heroku TODO replace by travis
+
+Not used:
+* Protractor as this is not the scope of the project. All used components are protractor tested
+* Karma as this is not the scope of the project. All used components are unit tested
+* anything to enhance the UI as this is not the scope of the project
+
 
 # Online resources 
 
